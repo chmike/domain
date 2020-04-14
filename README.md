@@ -1,4 +1,4 @@
-[![GoDoc](https://pkg.go.dev/github.com/chmike/domain?status.svg)](https://pkg.go.dev/github.com/chmike/domain)
+[![GoDoc](https://godoc.org/github.com/chmike/securecookie?status.svg)](https://pkg.go.dev/github.com/chmike/domain)
 [![Build](https://travis-ci.org/chmike/domain.svg?branch=master)](https://travis-ci.org/chmike/domain?branch=master)
 [![Coverage](https://coveralls.io/repos/github/chmike/domain/badge.svg?branch=master)](https://coveralls.io/github/chmike/domain?branch=master)
 [![Go Report](https://goreportcard.com/badge/github.com/chmike/domain)](https://goreportcard.com/report/github.com/chmike/domain)
