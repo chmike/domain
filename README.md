@@ -9,7 +9,9 @@
 
 This package contains a single function that checks the validity of a domain name. 
 
-A domain name must respect rules defined in [section 3.5 of RFC 1034 ("Domain names - concepts and facilities")](https://tools.ietf.org/html/rfc1034#section-3.5), and [section 2 of RFC 1123 ("Requirements for Internet Hosts -- Application and Support")](https://tools.ietf.org/html/rfc1123#section-2). 
+A domain name must respect rules defined in 
+- [section 3.5 of RFC 1034 ("Domain names - concepts and facilities")](https://tools.ietf.org/html/rfc1034#section-3.5)
+- [section 2 of RFC 1123 ("Requirements for Internet Hosts -- Application and Support")](https://tools.ietf.org/html/rfc1123#section-2)
 
 The `domain.Check` function ensures that the domain name respect those rules. If not, it returns an error explaining the detected problem. 
 
