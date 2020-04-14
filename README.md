@@ -3,7 +3,7 @@
 [![Coverage](https://coveralls.io/repos/github/chmike/domain/badge.svg?branch=master)](https://coveralls.io/github/chmike/domain?branch=master)
 [![Go Report](https://goreportcard.com/badge/github.com/chmike/domain)](https://goreportcard.com/report/github.com/chmike/domain)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
-![release](https://img.shields.io/github/release/chmike/domain.svg)
+![release](https://img.shields.io/github/release/chmike/domain/all.svg)
 
 # domain.Check()
 
