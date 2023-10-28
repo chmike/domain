@@ -1,6 +1,6 @@
 [![GoDoc](https://img.shields.io/badge/go.dev-reference-blue)](https://pkg.go.dev/github.com/chmike/domain)
 ![Build](https://github.com/chmike/domain/actions/workflows/workflow.yaml/badge.svg)
-[![codecov](https://codecov.io/gh/chmike/domain/branch/master/graph/badge.svg?token=06TJPZ1S5J)](https://codecov.io/gh/chmike/domain)
+[![codecov](https://codecov.io/gh/chmike/domain/graph/badge.svg?token=06TJPZ1S5J)](https://codecov.io/gh/chmike/domain)
 [![Go Report](https://goreportcard.com/badge/github.com/chmike/domain)](https://goreportcard.com/report/github.com/chmike/domain)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
 ![release](https://img.shields.io/github/release/chmike/domain.svg)
