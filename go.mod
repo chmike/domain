@@ -1,3 +1,3 @@
 module github.com/chmike/domain
 
-go 1.14
+go 1.19
