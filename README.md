@@ -1,9 +1,9 @@
 [![GoDoc](https://img.shields.io/badge/go.dev-reference-blue)](https://pkg.go.dev/github.com/chmike/domain)
-[![Build](https://travis-ci.org/chmike/domain.svg?branch=master)](https://travis-ci.org/chmike/domain?branch=master)
-[![Coverage](https://coveralls.io/repos/github/chmike/domain/badge.svg?branch=master)](https://coveralls.io/github/chmike/domain?branch=master)
+![Build](https://github.com/chmike/domain/actions/workflows/workflow.yaml/badge.svg)
+[![codecov](https://codecov.io/gh/chmike/domain/branch/master/graph/badge.svg?token=9XNNVJXV1E)](https://codecov.io/gh/chmike/cmac-go)
 [![Go Report](https://goreportcard.com/badge/github.com/chmike/domain)](https://goreportcard.com/report/github.com/chmike/domain)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
-![release](https://img.shields.io/github/release/chmike/domain/all.svg)
+![release](https://img.shields.io/github/release/chmike/domain.svg)
 
 # domain.Check()
 
