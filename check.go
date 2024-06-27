@@ -6,15 +6,23 @@ import (
 	"unicode/utf8"
 )
 
-// Check returns an error if the domain name is not valid.
+// Check returns an error if the host name is not valid.
 // See https://tools.ietf.org/html/rfc1034#section-3.5 and
 // https://tools.ietf.org/html/rfc1123#section-2.
 func Check(name string) error {
-	switch {
-	case len(name) == 0:
+	if len(name) == 0 {
 		return errors.New("domain name is empty")
-	case len(name) > 255:
-		return fmt.Errorf("domain name length is %d, can't exceed 255", len(name))
+	}
+	if name[len(name)-1] == '.' {
+		if len(name) > 254 {
+			return fmt.Errorf("domain name length is %d, can't exceed 254 with a trailing dot", len(name))
+		}
+		name = name[:len(name)-1] // drop valid trailing dot
+		if len(name) == 0 {
+			return errors.New("domain name is a single dot")
+		}
+	} else if len(name) > 253 {
+		return fmt.Errorf("domain name length is %d, can't exceed 253 without a trailing dot", len(name))
 	}
 	var l int
 	for i := 0; i < len(name); i++ {
@@ -23,7 +31,7 @@ func Check(name string) error {
 			// check domain labels validity
 			switch {
 			case i == l:
-				return fmt.Errorf("domain has invalid character '.' at offset %d, label can't begin with a period", i)
+				return fmt.Errorf("domain has an empty label at offset %d", l)
 			case i-l > 63:
 				return fmt.Errorf("domain byte length of label '%s' is %d, can't exceed 63", name[l:i], i-l)
 			case name[l] == '-':
@@ -46,8 +54,6 @@ func Check(name string) error {
 	}
 	// check top level domain validity
 	switch {
-	case l == len(name):
-		return fmt.Errorf("domain has missing top level domain, domain can't end with a period")
 	case len(name)-l > 63:
 		return fmt.Errorf("domain's top level domain '%s' has byte length %d, can't exceed 63", name[l:], len(name)-l)
 	case name[l] == '-':

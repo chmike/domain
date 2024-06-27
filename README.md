@@ -7,13 +7,13 @@
 
 # domain.Check()
 
-This package contains a single function that checks the validity of a domain name. 
+This package contains a single function that checks the validity of a **host name** domain name.
 
 A domain name must respect rules defined in 
 - [section 3.5 of RFC 1034 ("Domain names - concepts and facilities")](https://tools.ietf.org/html/rfc1034#section-3.5)
 - [section 2 of RFC 1123 ("Requirements for Internet Hosts -- Application and Support")](https://tools.ietf.org/html/rfc1123#section-2)
 
-The `domain.Check` function ensures that the domain name respect those rules. If not, it returns an error explaining the detected problem. 
+The `domain.Check` function ensures that the given host name respect those rules. If not, it returns an error explaining the detected problem.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ The package has no prerequisites and external dependencies.
 To install or update this package use the instruction:
 
 ```bash
-go get -u "github.com/chmike/domain"
+go get github.com/chmike/domain@latest
 ```
 
 ## Usage examples
@@ -34,7 +34,7 @@ The `Check` function can be used to check the validity of host or domain names.
 ```go
 name := "host.example.com"
 if err := domain.Check(name); if err != nil {
-    log.Fatalf("invalid domain name '%s': %v", name, err)
+    log.Fatalf("invalid host name '%s': %v", name, err)
 }
 ```
 
